@@ -70,9 +70,8 @@ Here is a quick reference template to kickstart any web page project:
 * **Instructor:** Mr. Mukesh Kumar Tiwari
 * **Department:** Department of Computer Science and Engineering
 * **Location:** Lab Room E-309, Quantum University
-* **Office Hours:** Check department notice board for consultation timings.
 
 <div align="center">
   <p><i>"Code is like humor. When you have to explain it, it’s bad." – Cory House</i></p>
-  <p><b>Happy Coding! 🚀</b></p>
+  <p><b>Lokesh hei Devta hai</b></p>
 </div>
