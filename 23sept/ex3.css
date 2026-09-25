@@ -1,0 +1,70 @@
+/* Neo-Brutalism Style */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f0e8;
+    color: #111;
+}
+
+/* Main heading */
+h1 {
+    background: #ffde59;
+    border: 4px solid #111;
+    box-shadow: 8px 8px 0 #111;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+/* About Me heading */
+h2 {
+    display: inline-block;
+    background: #ff6b6b;
+    border: 4px solid #111;
+    box-shadow: 6px 6px 0 #111;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph */
+p {
+    width: fit-content;
+    background: white;
+    border: 4px solid #111;
+    box-shadow: 6px 6px 0 #111;
+    padding: 18px 25px;
+    font-size: 22px;
+}
+
+/* Bold name */
+b {
+    background: #7bed9f;
+    padding: 4px 8px;
+    border: 2px solid #111;
+}
+
+/* Image */
+img {
+    display: block;
+    margin-top: 35px;
+    width: 300px;
+    max-width: 100%;
+    border: 5px solid #111;
+    box-shadow: 10px 10px 0 #111;
+}
+
+/* Small hover effect */
+h1:hover,
+h2:hover,
+p:hover,
+img:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 13px 13px 0 #111;
+    transition: 0.2s ease;
+}
