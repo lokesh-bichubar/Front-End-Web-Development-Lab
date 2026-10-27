@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 5 - JavaScript Operators & Decision Making</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 30px;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #003366;
+        }
+        h3 {
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+        hr {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Experiment 5</h1>
+        <h2>To write Java Script Program that perform basic arithmetic operations and implementation making statement such as if else and switch case</h2>
+        <div id="output"></div>
+        <script>
+            let output = "";
+            // Arithmetic Operations
+            let tuitionFee = 120000;
+            let scholarship = 20000;
+            output += "<h3>Fee Calculation</h3>";
+            output += "<p><b>Tuition Fee:</b> ₹" + tuitionFee + "</p>";
+            output += "<p><b>Scholarship:</b> ₹" + scholarship + "</p>";
+            output += "<p><b>Total Amount:</b> ₹" +
+                (tuitionFee + scholarship) + "</p>";
+            output += "<p><b>Fee After Scholarship:</b> ₹" +
+                (tuitionFee - scholarship) + "</p>";
+            output += "<p><b>Monthly Fee:</b> ₹" +
+                (tuitionFee / 12).toFixed(2) + "</p>";
+            output += "<hr>";
+            // Decision Making
+            let attendance = 82;
+            let marks = 86;
+            let grade;
+            output += "<h3>Student Result</h3>";
+            // If-Else Statement
+            if (attendance >= 75) {
+                output += "<p><b>Attendance:</b> " +
+                    attendance +
+                    "% (Eligible for Semester Examination)</p>";
+            } else {
+                output += "<p><b>Attendance:</b> " +
+                    attendance +
+                    "% (Not Eligible)</p>";
+            }
+            // Switch-Case Statement
+            switch (true) {
+                case (marks >= 90):
+                    grade = "A+";
+                    break;
+                case (marks >= 75):
+                    grade = "A";
+                    break;
+                case (marks >= 60):
+                    grade = "B";
+                    break;
+                case (marks >= 50):
+                    grade = "C";
+                    break;
+                default:
+                    grade = "F";
+            }
+            output += "<p><b>Marks:</b> " + marks + "</p>";
+            output += "<p><b>Grade:</b> " + grade + "</p>";
+            document.getElementById("output").innerHTML = output;
+        </script>
+    </div>
+</body>
+</html>
